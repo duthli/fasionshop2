@@ -1,13 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jBm-gf-hsW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--List Img-->
+        <scene sceneID="eq7-Qp-0OV">
+            <objects>
+                <viewController storyboardIdentifier="scroll" id="QMM-cR-B5x" customClass="listImg" customModule="fasionshop2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="deg-oh-JMk"/>
+                        <viewControllerLayoutGuide type="bottom" id="kfh-EM-Wsj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gba-ka-Is1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-Kn-Q8M">
+                                <rect key="frame" x="0.0" y="64" width="65" height="65"/>
+                                <state key="normal" title="SHOP 1"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="Bv7-RO-DV2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL1-lx-1Lr">
+                                <rect key="frame" x="167" y="64" width="65" height="65"/>
+                                <state key="normal" title="SHOP 2"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="3s1-k0-rxs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMI-a7-NMR">
+                                <rect key="frame" x="0.0" y="179" width="65" height="65"/>
+                                <state key="normal" title="SHOP 3"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="Fsu-EO-9LX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwm-4O-KXZ">
+                                <rect key="frame" x="167" y="179" width="65" height="65"/>
+                                <state key="normal" title="SHOP 4"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="DNh-71-aal"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA7-78-4t8">
+                                <rect key="frame" x="0.0" y="294" width="65" height="65"/>
+                                <state key="normal" title="SHOP 5"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="Iu0-BA-W2I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEt-dA-k6I">
+                                <rect key="frame" x="167" y="294" width="65" height="65"/>
+                                <state key="normal" title="SHOP 6"/>
+                                <connections>
+                                    <action selector="touchBut:" destination="QMM-cR-B5x" eventType="touchUpInside" id="YZc-Bd-a5N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c0u-N3-PYa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYT-F4-CZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="-26"/>
+        </scene>
+        <!--Scroll View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewScroll" id="BYZ-38-t0r" customClass="scrollView" customModule="fasionshop2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +81,119 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-zl-g2h">
+                                <rect key="frame" x="46" y="139" width="508" height="441"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I8D-cE-Ano"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-qK-sZc">
+                                <rect key="frame" x="0.0" y="579" width="600" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.36512352016510508" blue="0.55037110752104268" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fOH-1G-vVR"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.40225820394661504" green="1" blue="0.97556578424358054" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="OnChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="n40-OL-223"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ker-aa-wAF">
+                                <rect key="frame" x="554" y="337" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fi5-sy-MzP"/>
+                                    <constraint firstAttribute="height" constant="46" id="saM-Cb-Apx"/>
+                                </constraints>
+                                <state key="normal" title="Next" image="arrow next 3.ico"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyY-jL-L4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYB-oz-T3r">
+                                <rect key="frame" x="0.0" y="337" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="edI-Of-ccf"/>
+                                    <constraint firstAttribute="width" constant="46" id="y9k-g1-z52"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="arrow back.png"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DC2-E1-L8i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-cp-zOb">
+                                <rect key="frame" x="304" y="97" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8fS-DY-NaA"/>
+                                    <constraint firstAttribute="height" constant="40" id="EqH-Hk-Bml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẫu :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4El-E3-qB5">
+                                <rect key="frame" x="122" y="95" width="98" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2do-m3-ph4"/>
+                                    <constraint firstAttribute="width" secondItem="4El-E3-qB5" secondAttribute="height" multiplier="7:3" id="OvQ-mw-pEi"/>
+                                    <constraint firstAttribute="width" constant="98" id="PiC-Se-39N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.39685444078947368" green="0.77734375" blue="0.016365131578947419" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UPY-zl-g2h" firstAttribute="top" secondItem="4El-E3-qB5" secondAttribute="bottom" constant="2" id="4pr-Tl-Opk"/>
+                            <constraint firstItem="UPY-zl-g2h" firstAttribute="top" secondItem="2Ay-cp-zOb" secondAttribute="bottom" constant="2" id="6f8-k5-wOX"/>
+                            <constraint firstItem="ImM-qK-sZc" firstAttribute="top" secondItem="NYB-oz-T3r" secondAttribute="bottom" constant="196" id="7NV-P4-UyS"/>
+                            <constraint firstAttribute="trailing" secondItem="ImM-qK-sZc" secondAttribute="trailing" id="DjQ-zV-1hT"/>
+                            <constraint firstItem="UPY-zl-g2h" firstAttribute="leading" secondItem="NYB-oz-T3r" secondAttribute="trailing" id="Eim-oU-zda"/>
+                            <constraint firstItem="ImM-qK-sZc" firstAttribute="top" secondItem="UPY-zl-g2h" secondAttribute="bottom" constant="-1" id="LoC-X2-i7k"/>
+                            <constraint firstItem="Ker-aa-wAF" firstAttribute="leading" secondItem="UPY-zl-g2h" secondAttribute="trailing" id="UaC-pq-OXt"/>
+                            <constraint firstItem="ImM-qK-sZc" firstAttribute="top" secondItem="Ker-aa-wAF" secondAttribute="bottom" constant="196" id="ZSR-tC-2H1"/>
+                            <constraint firstItem="4El-E3-qB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="102" id="b9c-Oe-hY7"/>
+                            <constraint firstItem="4El-E3-qB5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="fsd-xO-cm3"/>
+                            <constraint firstItem="2Ay-cp-zOb" firstAttribute="leading" secondItem="4El-E3-qB5" secondAttribute="trailing" constant="32" id="gSs-E1-a6m"/>
+                            <constraint firstItem="Ker-aa-wAF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="317" id="k1A-KK-mPw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ker-aa-wAF" secondAttribute="trailing" id="pRb-yi-raq"/>
+                            <constraint firstItem="NYB-oz-T3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uzI-qZ-yO2"/>
+                            <constraint firstItem="NYB-oz-T3r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="317" id="w2X-di-aT6"/>
+                            <constraint firstItem="ImM-qK-sZc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wTs-BZ-GvQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lb_title" destination="2Ay-cp-zOb" id="JBF-7r-fSw"/>
+                        <outlet property="pageController" destination="ImM-qK-sZc" id="R9w-cF-Cfe"/>
+                        <outlet property="scrollView" destination="UPY-zl-g2h" id="qqb-tC-AIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Po5-1a-OSA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jBm-gf-hsW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NII-OS-vEe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QMM-cR-B5x" kind="relationship" relationship="rootViewController" id="f9p-P2-RUu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rh-jt-Uwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-421" y="-26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow back.png" width="256" height="256"/>
+        <image name="arrow next 3.ico" width="256" height="256"/>
+    </resources>
 </document>
